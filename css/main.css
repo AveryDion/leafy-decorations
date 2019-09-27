@@ -28,6 +28,7 @@ html {
 
 .nav a:hover {
   background-color: #fff;
+  border-color: #145b1d;
   color: rgba(16, 52, 41, .8);
   background-image: url("../images/leaf-icon.svg");
   background-size: 64px;
@@ -36,17 +37,17 @@ html {
 }
 
 .banner {
-  background-image: url("../images/banner.jpg");
-  background-position: left;
-  background-size: 100%;
+  background:
+    linear-gradient(to top, rgba(16, 52, 41, .8), rgba(16, 52, 41, 0) 50%),
+    url("../images/banner.jpg") no-repeat bottom / cover;
 }
 
 .banner-content {
-  padding-top: 18em;
   background-image: url("../images/two-leaves.svg");
   background-size: 100px;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: .75em 180px;
+  padding-top: 300px;
 }
 
 @media only screen and (min-width: 60em) {
